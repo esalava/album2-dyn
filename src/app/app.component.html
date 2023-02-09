@@ -1,0 +1,118 @@
+<mat-tab-group [selectedIndex]="1">
+  <mat-tab label="Cartita">
+    <div class="letter d-flex flex-row align-items-center justify-content-evenly mt-3">
+      <app-flip-card>
+        <flip-card-front>
+          <div class="d-flex flex-column align-items-center">
+            <div class="image">
+              <img src="assets/images/zeito.jpeg" />
+            </div>
+  
+            <h2 class="pt-3">Zeito</h2>
+          </div>
+        </flip-card-front>
+        <flip-card-back>
+          <p>
+            Me gusta cuando me enseñas a tus mascotas. Síguelo haciendo.
+          </p>
+        </flip-card-back>
+
+      </app-flip-card>
+      <div class="letter-content">
+        <h1>12nd month</h1>
+        <p>
+          Por fin amor, son doce meses. Y estoy demasiado emocionado porque veas lo que te hice. Sí, y posiblemente ya tenias alguna idea de que era, pero no te imaginabas como iba a ser. Pensaba primero hacer una manualidad, pero como ves, quizás no soy muy bueno haciendo eso. Mejor te hago una página que la puedes revisar desde cualquier lado, y en algo que en verdad soy bueno. Espero te guste.
+        </p>
+        <br>
+        <p>
+          Primero quisiera empezar en que no me esperaba conocerte de esta manera. Llegaste de una manera inesperada, ni si quiera me acuerdo muy bien por qué te hablé, en fin. Siempre me acuerdo que se me hacía raro que me hablaras todos los días y que de la nada una vez me mandaste una foto de tu carita preciosa. Se me hizo muy tierno y a la vez estaba confundido.
+        </p>
+        <br>
+        <p>
+          Aún me acuerdo esas noches que pasábamos discutiendo de los problemas y te gustaba siempre llevarme la contraria (aunque aún te sigue gustando). Pero no me quejo, por lo menos estoy en una relación que no es monótona y me agrada. Y tengo grabado la vez que me ayudabas con los ejercicio de CUV, me pasabas fotos de tus ayudantías y me tratabas de ayudar.
+        </p>
+        <br>
+        <p>
+          Conocí primero a una persona interesada en mí, y que me gustaba como me trataba. Te lo juro que me la pensé en decir algo, pero mejor quise seguir “enfocado” en cierta manera en lo que estaba estudiando.
+        </p>
+        <br>
+        <p>
+          Sucedieron problemas, obviamente, pero lo supimos resolver. De nuevo volvimos a hablar, pero la verdad no te quería dejar ir. Esta vez si quería algo serio, y quería que fuera contigo. Gracias por darme esa oportunidad de poder volverte a hablar y ser feliz contigo desde ese entonces.
+        </p>
+        <br>
+        <p>
+          Siento que cada vez que te hago algo, es tiempo que invierto, y me gusta estar invirtiendo mi tiempo contigo. Me gusta cuando me hablas y me calmas cada vez que dudo de algo. Me gusta que me robes besos cuando no me doy cuenta. Me gusta que te acuestes en mis brazos y me cuentes todo lo que ha pasado. Me gusta ver tu carita concentrada cuando haces algo. Me gusta imaginarte cómo te ves haciéndome un detalle para mí. Que tan concertada te verías. Me gusta ver películas y series contigo, te esperaré para seguir viendo snk desde allá.
+        </p>
+        <br>
+        <p>
+          Cierto, la cartita que le debía en el mes 11.
+        </p>
+        <br>
+        <p>
+          Qué tengo que decir de este mes?
+        </p>
+        <br>
+        <p>La verdad, darte gracias por haber estado cuando lo necesitaba. Y desearte lo mejor para este nuevo año que recién comienza. Espero que hagas bien tus pasantías y se de todo para que vayas a Alemania. Sigue siendo mi novia preciosa que, aunque, tenga algunas caídas sepa levantarse y no rendirse hasta saber que lo ha dado todo amor. Siempre ten en cuenta que estás en mis pensamientos y que te amaré para siempre. </p>
+        <br>
+        <p>
+          Recuerda que trataré de enamorarte más de mí y haré que te quedes en mi vida. Obviamente, tratándote como te lo mereces.
+        </p>
+        <br>
+        <p>
+          Estos tres meses van a ser largos, pero la espera valdrá la pena para los planes que tengo pensado contigo.
+        </p>
+        <br>
+        <p>Te amé, amo y amaré demasiado,</p>
+        <br>
+        <p>Atte. Eduardo Emilio Salavarría Gómez</p>
+      </div>
+
+      <app-flip-card>
+        <flip-card-front>
+          <div class="d-flex flex-column align-items-center">
+            <div class="image">
+              <img src="assets/images/dyn.jpeg" />
+            </div>
+  
+            <h2 class="pt-3">Us</h2>
+          </div>
+        </flip-card-front>
+        <flip-card-back>
+          <p>
+            Foto de nosotros, primera vez que comía lasaña de cangrejo. 
+          </p>
+        </flip-card-back>
+      </app-flip-card>
+
+    </div>
+  </mat-tab>
+  <mat-tab label="Fotitos"> <div class="container">
+    <div class="images col-md-12" >
+      <app-flip-card class="m-1" *ngFor = "let foto of fotos">
+        <flip-card-front>
+          <div class="d-flex flex-column align-items-center">
+            <div class="image">
+              <img src="{{foto.url}}" />
+            </div>
+  
+            <h2 class="pt-3">{{foto.title}}</h2>
+          </div>
+        </flip-card-front>
+  
+        <flip-card-back>
+          <p>
+            {{foto.description}}
+          </p>
+        </flip-card-back>
+      </app-flip-card>
+    </div>
+  </div></mat-tab>
+  <mat-tab label="Video">
+    <div class="video d-flex flex-column align-items-center justify-content-center">
+      <h1>Gracias por todo lo que hemos pasado</h1>
+      <iframe width="900px" height="510px" src="https://www.youtube.com/embed/8CyV_NfHYWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+
+<router-outlet></router-outlet>
